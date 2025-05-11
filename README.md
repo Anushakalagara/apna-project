@@ -1,4 +1,3 @@
-# apna-project
 # Voice-Driven Banking via LAMs (C4GT 2025 Proposal)
 
 This repository contains the early-stage prototype for the "Voice-Driven Banking using LLMs" project under Mifos for C4GT 2025.
@@ -34,3 +33,7 @@ Leverage open-source STT (Speech-to-Text) and TTS (Text-to-Speech) tools to enab
 - Add real-time TTS response (pyttsx3 or gTTS)
 - Connect to sample banking APIs for real use-cases
 - Add Hindi & Telugu language support
+
+## 🤝 Contributing
+
+PRs and issues welcome! Built for the Mifos community with ❤️

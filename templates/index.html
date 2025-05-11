@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voice Banking Demo</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Voice Banking</h1>
+  <button onclick="sendVoice()">Simulate Voice</button>
+  <p id="response"></p>
+<script>
+function sendVoice() {
+  fetch('/voice', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({text: 'What is my balance?'})
+  }).then(res => res.json()).then(data => {
+    document.getElementById("response").innerText = data.response;
+  });
+}
+</script>
+</body>
+</html>
